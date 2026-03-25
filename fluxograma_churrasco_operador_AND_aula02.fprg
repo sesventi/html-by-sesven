@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="fluxograma_churrasco_operador_AND"/>
+        <attribute name="authors" value="Alunos"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-04 03:40:07 "/>
+        <attribute name="created" value="QWx1bm9zOzI1N19DQTItMjE2WDsyMDI2LTAzLTA0OyIwMzozMDozOSAiOzI1Mzc="/>
+        <attribute name="edited" value="QWx1bm9zOzI1N19DQTItMjE2WDsyMDI2LTAzLTA0OyIwMzo0MDowNyAiOzE7MjY0MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="carvao, carne" type="Boolean" array="False" size=""/>
+            <output expression="&quot;Tem carvao?&quot;" newline="True"/>
+            <input variable="carvao"/>
+            <output expression="&quot;tem carne&quot;" newline="True"/>
+            <input variable="carne"/>
+            <if expression="(carvao == true) and (carne == true)">
+                <then>
+                    <output expression="&quot;haver&#225; churrasco&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="(carvao == false) and (carne == true)">
+                        <then>
+                            <output expression="&quot;N&#227;o haver&#225; churrasco&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="(carvao == false) and (carne == false)">
+                                <then>
+                                    <output expression="&quot;N&#227;o haver&#225; churrasco&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="(carvao == true) and (carne == false)">
+                                        <then>
+                                            <output expression="&quot;n&#227;o haver&#225; churrasco&quot;" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
